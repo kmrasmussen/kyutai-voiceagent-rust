@@ -9,7 +9,7 @@ use serde::{Deserialize, Serialize};
 async fn main() {
   println!("starting websocket server");
   let ip = "0.0.0.0";
-  let port = "7845";
+  let port = "8050";
   let ipport = format!("{}:{}", ip, port);
   let listener = TcpListener::bind(ipport.clone()).await.unwrap();
   println!("listening for tcp on {}", ipport);
